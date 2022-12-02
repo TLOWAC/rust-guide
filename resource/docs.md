@@ -18,6 +18,11 @@
 | [[ Tutorial ] Tour of Rust](https://tourofrust.com/) |- |
 | [[ MDN ] Rust를 WebAssembly로 컴파일하기](https://developer.mozilla.org/ko/docs/WebAssembly/Rust_to_wasm) |- |
 
+## ORM
+| orm                                                                                   | description |
+| ----------------------------------------------------------------------------------------------- | ----------- |
+| [[ Github ] prisma-client-rust](https://github.com/Brendonovich/prisma-client-rust)                           | -           |
+
 
 ## etc.
 > Link that I haven't classified yet.
