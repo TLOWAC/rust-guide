@@ -25,6 +25,12 @@
 | [[ Github ] prisma-client-rust](https://github.com/Brendonovich/prisma-client-rust) | -           |
 
 
+## Project 
+| project name| description|
+|-|-|
+|[ Github ] create-rust-app](https://github.com/Wulf/create-rust-app) |rust-app, cli, npm 보일러 플레이트를 제공한다. |
+
+
 ## rust vsc extension
 | documentation                                                                                 | description                                                       |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
