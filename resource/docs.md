@@ -14,6 +14,7 @@
 | --------------------------------------------------------------------------------------------------------- | ----------- |
 | [[ Docs ] The Rust Programming Language - EN](https://doc.rust-lang.org/book/)                            | -           |
 | [[ Docs ] The Rust Programming Language - KR](https://rinthel.github.io/rust-lang-book-ko/foreword.html)  | -           |
+| [[ Docs ] Rust Documentation](https://devdocs.io/rust/)| rust 언어 스펙 가이드 문서|
 | [[ Tutorial ] Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)                      | -           |
 | [[ Tutorial ] Tour of Rust](https://tourofrust.com/)                                                      | -           |
 | [[ MDN ] Rust를 WebAssembly로 컴파일하기](https://developer.mozilla.org/ko/docs/WebAssembly/Rust_to_wasm) | -           |
