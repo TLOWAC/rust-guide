@@ -17,6 +17,7 @@
 | [[ Docs ] Rust Documentation](https://devdocs.io/rust/)| rust 언어 스펙 가이드 문서|
 | [[ Tutorial ] Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)                      | -           |
 | [[ Tutorial ] Tour of Rust](https://tourofrust.com/)                                                      | -           |
+| [[ Tutorial ] 24 days of Rust](https://zsiciarz.github.io/24daysofrust/index.html) | 여러 종류의 crates 를 24일 동안 학습하는 튜토리얼| 
 | [[ MDN ] Rust를 WebAssembly로 컴파일하기](https://developer.mozilla.org/ko/docs/WebAssembly/Rust_to_wasm) | -           |
 
 ## ORM
