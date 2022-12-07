@@ -27,7 +27,7 @@
 
 ## Project 
 | project name| description|
-|-0|-|
+|-|-|
 | [[ Github ] create-rust-app](https://github.com/Wulf/create-rust-app) |rust-app, cli, npm 보일러 플레이트를 제공한다. |
 
 
