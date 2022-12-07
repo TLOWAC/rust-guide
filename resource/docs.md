@@ -30,6 +30,13 @@
 | [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)        | Better TOML Language support that cargo.toml file in rust project |
 | [Rust Syntax](https://marketplace.visualstudio.com/items?itemName=dustypomerleau.rust-syntax) | Improved Rust syntax highlighting                                 |
 
+## useful site
+|site name|description|
+|-|-|
+|[lib.rs](https://lib.rs/)|Lib.rs is a catalog of programs and libraries written in the Rust programming language.|
+
+
+
 ## etc.
 > Link that I haven't classified yet.
 
