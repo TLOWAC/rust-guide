@@ -18,9 +18,18 @@ impl Config {
     pub fn from_env() -> Result<Self, ConfigError> {
         Ok(Config {
             server: ServerConfig {
-                host: env::var("HOST").unwrap(),
-                port: env::var("PORT").unwrap().parse::<i32>().unwrap(),
+                host: get_env_var("HOST"),
+                port: get_env_var("PORT"),
             },
         })
     }
+}
+
+fn get_env_var<T>(env_var_name: &str) -> T
+where
+    T: std::str::FromStr,
+    T::Err: std::fmt::Debug,
+{
+    let var = env::var(env_var_name).unwrap();
+    return var.parse::<T>().unwrap();
 }
