@@ -12,7 +12,7 @@ pub struct Settings {
 #[derive(Deserialize, Debug)]
 pub struct ServerSettings {
         pub host: String,
-        pub port: i32,
+        pub port: u16,
 }
 
 #[derive(Deserialize, Debug)]
