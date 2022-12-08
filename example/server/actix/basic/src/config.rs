@@ -59,7 +59,7 @@ impl Settings {
 }
 
 impl DatabaseSettings {
-        pub fn connection_string(&self) -> String {
+        pub fn get_connection_url(&self) -> String {
                 return format!(
                         "postgres://{}:{}@{}:{}/{}",
                         self.username, self.password, self.host, self.port, self.database_name
