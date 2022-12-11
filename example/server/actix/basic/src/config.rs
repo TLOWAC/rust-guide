@@ -27,11 +27,7 @@ pub struct DatabaseSettings {
 
 #[derive(Deserialize, Debug)]
 pub struct PhaseSettings {
-        pub rust_env: String,
-        pub is_production: bool,
-        pub is_development: bool,
-        pub is_local: bool,
-}
+        pub rust_env: String}
 
 impl Settings {
         pub fn from_env() -> Result<Self, ConfigError> {
@@ -50,9 +46,6 @@ impl Settings {
                         },
                         phase: PhaseSettings {
                                 rust_env: get_env_var("RUST_ENV"),
-                                is_production: true,
-                                is_development: true,
-                                is_local: true,
                         },
                 })
         }
@@ -67,11 +60,26 @@ impl DatabaseSettings {
         }
 }
 
+impl PhaseSettings {
+        pub fn check_is_local(&self) -> bool {
+                let is_local = self.rust_env.eq("local");
+                return is_local;
+        }
+        pub fn check_is_development(&self) -> bool {
+                let is_development = self.rust_env.eq("development");
+                return is_development;
+        }
+        pub fn check_is_production(&self) -> bool {
+                let is_production = self.rust_env.eq("production");
+                return is_production;
+        }
+}
+
 fn get_env_var<T>(env_var_name: &str) -> T
 where
         T: std::str::FromStr,
         T::Err: std::fmt::Debug,
 {
-        let var = env::var(env_var_name).unwrap();
+        let var = env::var(env_var_name).unwrap_or_else(|_| panic!("Error ! {} is empty.", env_var_name));
         return var.parse::<T>().unwrap();
 }
