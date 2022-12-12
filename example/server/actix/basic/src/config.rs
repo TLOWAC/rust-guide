@@ -27,7 +27,8 @@ pub struct DatabaseSettings {
 
 #[derive(Deserialize, Debug)]
 pub struct PhaseSettings {
-        pub rust_env: String}
+        pub rust_env: String,
+}
 
 impl Settings {
         pub fn from_env() -> Result<Self, ConfigError> {
@@ -54,12 +55,13 @@ impl Settings {
 impl DatabaseSettings {
         pub fn get_connection_url(&self) -> String {
                 return format!(
-                        "postgres://{}:{}@{}:{}/{}",
+                        "mysql://{}:{}@{}:{}/{}",
                         self.username, self.password, self.host, self.port, self.database_name
                 );
         }
 }
 
+#[allow(unused)]
 impl PhaseSettings {
         pub fn check_is_local(&self) -> bool {
                 let is_local = self.rust_env.eq("local");
