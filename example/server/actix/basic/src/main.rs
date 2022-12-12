@@ -1,8 +1,10 @@
 mod config;
 mod controller;
+mod mysql;
 
 use crate::config::Settings;
 
+use actix_web::web;
 use actix_web::{middleware::Logger, App, HttpServer};
 use dotenvy::from_filename;
 use env_logger::Env;
@@ -18,6 +20,8 @@ async fn main() -> std::io::Result<()> {
         let Settings { server, .. } = config;
 
         env_logger::init_from_env(Env::default().default_filter_or("info"));
+
+        let pool = mysql::establish_connection();
 
         HttpServer::new(|| {
                 let app = App::new()
