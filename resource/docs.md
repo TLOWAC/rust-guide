@@ -15,7 +15,8 @@
 | [[ Docs ] The Rust Programming Language - EN](https://doc.rust-lang.org/book/)                            | -           |
 | [[ Docs ] The Rust Programming Language - KR](https://rinthel.github.io/rust-lang-book-ko/foreword.html)  | -           |
 | [[ Docs ] Rust Documentation](https://devdocs.io/rust/)| rust 언어 스펙 가이드 문서|
-| [[ Docs ] Rust Design Patterns]([https://devdocs.io/rust/](https://rust-unofficial.github.io/patterns/intro.html))| rust 디자인 패턴 문서|
+| [[ Docs ] Rust Design Patterns](https://devdocs.io/rust/)| rust 디자인 패턴 문서|
+| [[ Docs ] Cargo Book](https://doc.rust-lang.org/cargo/index.html)| Cargo 가이드 문서|
 | [[ Tutorial ] Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)                      | -           |
 | [[ Tutorial ] Tour of Rust](https://tourofrust.com/)                                                      | -           |
 | [[ Tutorial ] 24 days of Rust](https://zsiciarz.github.io/24daysofrust/index.html) | 여러 종류의 crates 를 24일 동안 학습하는 튜토리얼| 
