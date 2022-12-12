@@ -23,8 +23,9 @@ async fn main() -> std::io::Result<()> {
 
         let pool = mysql::establish_connection();
 
-        HttpServer::new(|| {
+        HttpServer::new(move || {
                 let app = App::new()
+                        .app_data(web::Data::new(pool.clone()))
                         .wrap(Logger::new("%a %r %s %T"))
                         .service(controller::get_user);
 
