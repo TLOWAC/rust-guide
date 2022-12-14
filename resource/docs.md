@@ -20,6 +20,8 @@
 | [[ Tutorial ] Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)                      | -           |
 | [[ Tutorial ] Tour of Rust](https://tourofrust.com/)                                                      | -           |
 | [[ Tutorial ] 24 days of Rust](https://zsiciarz.github.io/24daysofrust/index.html) | 여러 종류의 crates 를 24일 동안 학습하는 튜토리얼| 
+| [[ Tutorial ] Take your first steps with Rust](https://learn.microsoft.com/ko-kr/training/) | Learn Microsoft 에서 제공하는 Rust 기초 학습 자료. impl, trait 등 다소 생소한 Rust 기초 개념 학습에 많은 도움이 됨.| 
+
 | [[ MDN ] Rust를 WebAssembly로 컴파일하기](https://developer.mozilla.org/ko/docs/WebAssembly/Rust_to_wasm) | -           |
 
 ## ORM
